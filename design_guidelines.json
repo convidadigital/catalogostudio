@@ -1,0 +1,417 @@
+{
+  "project_name": "CATÁLOGO STUDIO DIGITAL",
+  "app_type": "hybrid_fullstack (one-page luxury editorial catalog)",
+  "language": "pt-BR",
+  "design_philosophy": {
+    "concept": "Haute Couture Editorial Lookbook meets Interactive Smartphone Showcase",
+    "tone": "Ultra-premium, feminine, modern, cinematic, high-contrast",
+    "theme_rules": "Crisp stark white and soft alabaster light base (#FAFAFA / #FFFFFF) with deliberate obsidian black (#0A0A0A) editorial blocks for contrast and deep sophistication, illuminated by luxury rose fuchsia (#D81B60 / #E91E63) accents. Strictly no lilac, baby blue, dull beige, or outdated pastel palettes."
+  },
+  "typography": {
+    "font_pairings": {
+      "display_headings": {
+        "font_family": "'Playfair Display', 'Cormorant Garamond', Georgia, serif",
+        "google_font_url": "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Italiana&display=swap",
+        "usage": "H1, H2, H3, Brand wordmarks, card titles, badges with serif flair"
+      },
+      "body_support": {
+        "font_family": "'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif",
+        "usage": "Subtitles, descriptions, prices, specs, filter labels, CTA button typography"
+      },
+      "accent_editorial": {
+        "font_family": "'Italiana', 'Playfair Display', serif",
+        "usage": "Logo symbol, hero badge, deluxe luxury counters, quote markers"
+      }
+    },
+    "hierarchy_scale": {
+      "hero_title": "text-4xl sm:text-5xl lg:text-6xl font-serif tracking-tight text-neutral-950 uppercase leading-none",
+      "hero_eyebrow": "text-xs sm:text-sm font-sans tracking-[0.25em] uppercase text-rose-600 font-semibold",
+      "hero_subtitle": "text-lg sm:text-xl font-sans text-neutral-600 max-w-2xl leading-relaxed",
+      "section_title": "text-3xl sm:text-4xl font-serif tracking-tight text-neutral-900 font-normal",
+      "section_subtitle": "text-sm sm:text-base font-sans text-neutral-500 tracking-normal",
+      "card_title": "text-xl sm:text-2xl font-serif text-neutral-950 font-semibold group-hover:text-rose-600 transition-colors duration-300",
+      "card_price": "text-xl font-bold font-sans text-neutral-900 tracking-tight",
+      "card_price_sub": "text-xs font-sans text-neutral-400 font-normal",
+      "badge_text": "text-[10px] sm:text-[11px] font-sans font-bold tracking-[0.12em] uppercase"
+    }
+  },
+  "colors": {
+    "palette": {
+      "base_light": "#FFFFFF",
+      "base_soft": "#FAFAFA",
+      "base_subtle": "#F4F4F6",
+      "text_main": "#0A0A0A",
+      "text_muted": "#52525B",
+      "text_subtle": "#A1A1AA",
+      "primary_rose": "#D81B60",
+      "primary_rose_hover": "#C2185B",
+      "primary_rose_light": "#FFF1F5",
+      "primary_rose_border": "#FBCFE8",
+      "primary_rose_glow": "rgba(216, 27, 96, 0.25)",
+      "dark_section_bg": "#0A0A0A",
+      "dark_card_bg": "#141416",
+      "dark_border": "rgba(255, 255, 255, 0.12)",
+      "dark_text_main": "#FFFFFF",
+      "dark_text_muted": "#A1A1AA",
+      "border_light": "rgba(10, 10, 10, 0.08)",
+      "border_card_hover": "rgba(216, 27, 96, 0.4)"
+    },
+    "forbidden_colors": [
+      "#7351B7 (purple AI generic)",
+      "#D8B4E2 (dated lilac)",
+      "#BAE6FD (baby blue)",
+      "#FDF6B2 (vintage butter cream)",
+      "#1B93A4 (dashboard teal)"
+    ]
+  },
+  "hero_composition": {
+    "layout": "Editorial centerpiece banner with layered luxury aesthetics",
+    "branding": {
+      "brand_name": "STUDIO DIGITAL",
+      "brand_tagline": "CONVITES DIGITAIS INTERATIVOS & ALTA PAPELARIA VIRTUAL",
+      "brand_description": "Experiências memoráveis para os momentos mais sublimes. Visualize em tempo real o formato mobile com confirmação RSVP, mapa interativo, lista de presentes e design sob medida."
+    },
+    "visual_treatment": {
+      "background": "bg-white border-b border-neutral-100 relative overflow-hidden",
+      "decorative_elements": "Delicate radial highlight of rose glow (#FFF1F5) behind title, 1px geometric gridlines at 4% opacity, high-fashion subtle grain texture overlay",
+      "editorial_metrics": [
+        {"label": "CONVITES CRIADOS", "value": "12.800+"},
+        {"label": "SATISFAÇÃO", "value": "99.8%"},
+        {"label": "CONFIRMAÇÃO RSVP", "value": "100% DIGITAL"},
+        {"label": "ENTREGA EXPRESS", "value": "ATÉ 24H"}
+      ]
+    }
+  },
+  "filter_bar": {
+    "style": "Sticky luxury pill bar with horizontal smooth scroll and active indicators",
+    "categories": [
+      {"id": "TODOS", "label": "TODOS OS MODELOS", "count": 13},
+      {"id": "CONVITES", "label": "CONVITES CLÁSSICOS", "count": 3},
+      {"id": "FORMATURA", "label": "FORMATURA", "count": 2},
+      {"id": "15 ANOS", "label": "15 ANOS / DEBUTANTE", "count": 3},
+      {"id": "CASAMENTO", "label": "CASAMENTO & NOIVADO", "count": 3},
+      {"id": "CHÁ DE BEBÊ", "label": "CHÁ DE BEBÊ & MATERNIDADE", "count": 1},
+      {"id": "EXTRAS", "label": "SAVE THE DATE & EXTRAS", "count": 1}
+    ],
+    "pill_design": {
+      "inactive": "bg-white text-neutral-700 border border-neutral-200/80 hover:border-neutral-900 hover:text-neutral-950 px-4 py-2 text-xs font-semibold tracking-wider transition-all duration-200 rounded-full",
+      "active": "bg-neutral-950 text-white shadow-md border border-neutral-950 px-4 py-2 text-xs font-semibold tracking-wider rounded-full ring-2 ring-rose-500/30"
+    }
+  },
+  "smartphone_mockup_spec": {
+    "ratio": "aspect-[9/16] or min-h-[460px]",
+    "bezel": "Deep obsidian rounded frame (rounded-[2.4rem] or rounded-[2.2rem]) with 8px to 10px outer rim, polished subtle shadow and titanium border highlight (border border-neutral-800)",
+    "dynamic_island": "Subtle top speaker slot / notch centered at the top for real iPhone aesthetic",
+    "screen_container": "overflow-hidden rounded-[1.8rem] bg-neutral-950 relative w-full h-full",
+    "live_indicator": "Top right glass badge: 'PRÉVIA INTERATIVA' with pulsing rose dot",
+    "interaction": "Smooth scale transition on hover (group-hover:scale-[1.03] transition-transform duration-500 ease-out), subtle shimmer glare effect across screen"
+  },
+  "card_anatomy": {
+    "container": "group bg-white rounded-3xl border border-neutral-200/70 p-4 sm:p-5 flex flex-col justify-between shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_40px_rgba(216,27,96,0.09)] hover:border-rose-300 transition-all duration-300 relative",
+    "badge_strategy": {
+      "highlight_5_items": "Soft rose perimeter border ring, glowing subtle halo",
+      "types": {
+        "MAIS COMPLETO": "bg-neutral-950 text-white border border-neutral-800",
+        "DELUXE": "bg-gradient-to-r from-rose-600 to-pink-600 text-white shadow-sm",
+        "EXPERIÊNCIA PREMIUM": "bg-rose-50 text-rose-700 border border-rose-200 font-bold",
+        "MAIS VENDIDO": "bg-amber-100 text-amber-900 border border-amber-300 font-bold"
+      }
+    },
+    "content_layout": {
+      "header_row": "Category eyebrow in tracking-[0.2em] rose-600 text-[11px] font-semibold + Selo / Badge on the right",
+      "title": "font-serif text-xl sm:text-2xl text-neutral-950 line-clamp-1 mt-1 font-semibold",
+      "description": "text-xs sm:text-sm text-neutral-600 line-clamp-2 mt-1 leading-relaxed",
+      "attributes_chips": "Horizontal list of features: 'RSVP Online', 'Localização Waze/Uber', 'Lista de Presentes', 'Contagem Regressiva'",
+      "pricing_row": "Valor formatado em BRL (R$) com indicação de parcelamento ou valor à vista + Variações (ex: Tradicional, Interativo, Animated)",
+      "cta_buttons_row": {
+        "primary_action": "Button 'QUERO ESTE CONVITE' (Direct WhatsApp checkout link with pre-filled product name and price, bg-neutral-950 text-white hover:bg-rose-600 transition-all font-sans text-xs tracking-wider font-semibold py-3 px-4 rounded-xl flex items-center justify-center gap-2 flex-1 shadow-sm)",
+        "secondary_action": "Button 'VER DEMONSTRAÇÃO' (Opens luxury interactive preview modal, border border-neutral-200 text-neutral-800 hover:border-neutral-900 hover:text-neutral-950 font-sans text-xs tracking-wider font-semibold py-3 px-4 rounded-xl flex items-center justify-center gap-2 flex-1)"
+      }
+    }
+  },
+  "preview_modal_spec": {
+    "backdrop": "backdrop-blur-xl bg-black/80 fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6",
+    "modal_window": "relative w-full max-w-4xl bg-neutral-950 border border-neutral-800 rounded-3xl p-4 sm:p-8 flex flex-col lg:flex-row gap-6 shadow-[0_24px_64px_rgba(0,0,0,0.8)] overflow-hidden",
+    "phone_display": "flex-shrink-0 w-full sm:w-[320px] md:w-[360px] mx-auto aspect-[9/16] max-h-[72vh] rounded-[2.5rem] p-2 bg-gradient-to-b from-neutral-800 to-neutral-950 border border-neutral-700 shadow-2xl relative flex flex-col",
+    "phone_screen": "w-full h-full rounded-[2.1rem] overflow-hidden bg-neutral-900 relative flex flex-col",
+    "iframe_handling": {
+      "loader": "Skeleton animated with rose accent and pulsing text 'Carregando demonstração interativa...'",
+      "fallback_bar": "Bottom floating bar with 'Caso não carregue na janela, toque aqui para abrir em nova aba' with external link icon",
+      "full_open_cta": "Sticky button 'ABRIR CONVITE COMPLETO EM TELA CHEIA' with external link"
+    },
+    "modal_sidebar": {
+      "product_details": "Title, category, full descriptive benefits (RSVP, Music, Maps, Gifts), list of included items, direct WhatsApp CTA: 'FAZER MEU PEDIDO AGORA', close button with ESC key listener and touch dismiss"
+    }
+  },
+  "dark_sections_strategy": {
+    "sections": [
+      {
+        "name": "Diferenciais Studio Digital (The Craft & Tech Behind)",
+        "background": "bg-neutral-950 text-white border-y border-neutral-800",
+        "features": [
+          {"title": "Confirmação RSVP em Tempo Real", "desc": "Receba a lista com presença confirmada e mensagens dos convidados direto no seu painel ou WhatsApp."},
+          {"title": "Navegação GPS com 1 Toque", "desc": "Botões integrados para Google Maps e Waze para que nenhum convidado se perca no dia do evento."},
+          {"title": "Lista de Presentes & PIX", "desc": "Chave PIX ou link para lojas externas exibidos com elegância e facilidade de cópia."},
+          {"title": "Música de Fundo & Animações", "desc": "Trilha sonora personalizada e micro-efeitos editoriais que emocionam logo ao abrir."}
+        ]
+      },
+      {
+        "name": "Rodapé de Alta Grife (Footer)",
+        "background": "bg-neutral-950 text-white border-t border-neutral-900 py-16 sm:py-24",
+        "content": "Official Studio Digital serif emblem, institutional mission text, contact channels, direct CTA buttons 'FAZER MEU PEDIDO' (rose accent) and 'FALAR COM O STUDIO DIGITAL' (clean outline), copyright and secure transaction badges"
+      }
+    ]
+  },
+  "responsive_breakpoints": {
+    "mobile": "1 column grid (grid-cols-1) with prominent full-width phone mockups (min-h-[440px]), touch-optimized 48px tap targets, sticky category scroller",
+    "tablet": "2 column grid (grid-cols-1 sm:grid-cols-2 lg:grid-cols-3) with balanced gap (gap-6)",
+    "desktop": "Strict 3 column grid (lg:grid-cols-3) to maintain balanced aspect ratios without ultra-stretched cards, centered container max-w-7xl px-4 sm:px-6 lg:px-8"
+  },
+  "products_data": [
+    {
+      "id": "convite-01",
+      "name": "Elysée Imperial Wedding",
+      "category": "CASAMENTO",
+      "badge": "EXPERIÊNCIA PREMIUM",
+      "is_featured": true,
+      "price": "R$ 189,90",
+      "price_installments": "ou 3x de R$ 67,50",
+      "description": "Design neoclássico com caligrafia fluida, monograma em destaque, contagem regressiva e confirmação RSVP com acompanhantes.",
+      "features": ["RSVP Integrado", "Trilha Sonora", "Lista de Presentes", "Waze & Maps"],
+      "variations": ["Versão Tradicional", "Versão com Vídeo Save The Date"],
+      "demo_url": "https://example.com/demo/elysee-wedding",
+      "preview_image": "https://images.unsplash.com/photo-1738898179451-b5fc497f9f8e?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "color_scheme": "Preto, Branco e Rose Gold"
+    },
+    {
+      "id": "convite-02",
+      "name": "Aura Noir Debutante 15 Anos",
+      "category": "15 ANOS",
+      "badge": "DELUXE",
+      "is_featured": true,
+      "price": "R$ 169,90",
+      "price_installments": "ou 3x de R$ 60,30",
+      "description": "Estética high fashion contemporânea com brilho rosé e tipografia editorial marcante. Galeria de fotos e playlist temática inclusa.",
+      "features": ["Galeria 15 Fotos", "Contagem Regressiva", "Música Spotify", "Manual da Valsa"],
+      "variations": ["Tema Gala Rose", "Tema Midnight Dark"],
+      "demo_url": "https://example.com/demo/aura-noir-15",
+      "preview_image": "https://images.unsplash.com/photo-1647470224846-205e6465b624?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "color_scheme": "Preto e Rosa Intenso"
+    },
+    {
+      "id": "convite-03",
+      "name": "Vanguard Medicina & Direito",
+      "category": "FORMATURA",
+      "badge": "MAIS COMPLETO",
+      "is_featured": true,
+      "price": "R$ 179,90",
+      "price_installments": "ou 3x de R$ 63,90",
+      "description": "Solene, moderno e imponente para formaturas individuais ou comissão. Cronograma dos dias de evento e mapa dos bailes.",
+      "features": ["Agenda de Cerimônias", "Traje Obrigatório", "Localização 3 Locais", "Mural de Recados"],
+      "variations": ["Individual", "Turma Completa"],
+      "demo_url": "https://example.com/demo/vanguard-formatura",
+      "preview_image": "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "color_scheme": "Preto Profundo e Dourado Rosé"
+    },
+    {
+      "id": "convite-04",
+      "name": "Jardim de Provence Botanical",
+      "category": "CASAMENTO",
+      "badge": "MAIS VENDIDO",
+      "is_featured": true,
+      "price": "R$ 159,90",
+      "price_installments": "ou 3x de R$ 56,80",
+      "description": "Romantismo orgânico e atemporal com arabescos finos e folhagens botânicas requintadas para casamentos diurnos e ao ar livre.",
+      "features": ["Dress Code com Paleta", "RSVP Instantâneo", "Música Suave", "Sugestão de Hotéis"],
+      "variations": ["Floral Rosé", "Verde Oliva & Branco"],
+      "demo_url": "https://example.com/demo/jardim-provence",
+      "preview_image": "https://images.unsplash.com/photo-1561593367-66c79c2294e6?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "color_scheme": "Alabaster e Rosa Chá"
+    },
+    {
+      "id": "convite-05",
+      "name": "Luminary Debutante Celebration",
+      "category": "15 ANOS",
+      "badge": "EXPERIÊNCIA PREMIUM",
+      "is_featured": true,
+      "price": "R$ 169,90",
+      "price_installments": "ou 3x de R$ 60,30",
+      "description": "Transmissão da elegância dos bailes com interatividade mobile total, confirmação para amigos e familiares e link para lista de presentes.",
+      "features": ["Confirmação por WhatsApp", "Linha do Tempo", "Filtro do Instagram", "Link TikTok"],
+      "variations": ["Rose Gold Glitz", "Pure White Minimalist"],
+      "demo_url": "https://example.com/demo/luminary-15",
+      "preview_image": "https://images.unsplash.com/photo-1647470225155-f095a308d959?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "color_scheme": "Branco Puro e Rosa Blush"
+    },
+    {
+      "id": "convite-06",
+      "name": "Atelier Monogram Monocromático",
+      "category": "CONVITES",
+      "badge": "DELUXE",
+      "is_featured": false,
+      "price": "R$ 139,90",
+      "price_installments": "ou 2x de R$ 73,50",
+      "description": "Linhas puras suíças, espaço negativo equilibrado e brasão com as iniciais dos noivos ou anfitriões. Máxima sobriedade com toque feminino.",
+      "features": ["Brasão Personalizado", "Botão Chave PIX", "Confirmação RSVP", "Guia do Convidado"],
+      "variations": ["Tipografia Serif", "Tipografia Display"],
+      "demo_url": "https://example.com/demo/atelier-monogram",
+      "preview_image": "https://images.unsplash.com/photo-1648656433573-ab565ff450c0?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "color_scheme": "Monocromático e Acentos Rosa"
+    },
+    {
+      "id": "convite-07",
+      "name": "Opulence Ouro & Velvet",
+      "category": "CASAMENTO",
+      "badge": null,
+      "is_featured": false,
+      "price": "R$ 199,90",
+      "price_installments": "ou 3x de R$ 71,10",
+      "description": "Inspiração em papéis artesanais de algodão com selo de cera virtual dinâmico e animação de abertura de envelope luxuosa.",
+      "features": ["Envelope Animado 3D", "RSVP Inteligente", "Música ao Abrir", "Dress Code"],
+      "variations": ["Selo Rose", "Selo Dourado"],
+      "demo_url": "https://example.com/demo/opulence-velvet",
+      "preview_image": "https://images.pexels.com/photos/4234530/pexels-photo-4234530.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "color_scheme": "Veludo Dark e Ouro Rose"
+    },
+    {
+      "id": "convite-08",
+      "name": "Belle Époque 15 Anos",
+      "category": "15 ANOS",
+      "badge": null,
+      "is_featured": false,
+      "price": "R$ 149,90",
+      "price_installments": "ou 2x de R$ 78,90",
+      "description": "Para aniversários inesquecíveis. Apresentação das atrações da noite, DJ, bar de drinks e confirmação de presença com código individual.",
+      "features": ["Line-up da Festa", "Contagem Regressiva", "Filtro Exclusivo", "Localização"],
+      "variations": ["Rosa Chic", "Preto & Pink"],
+      "demo_url": "https://example.com/demo/belle-epoque-15",
+      "preview_image": "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "color_scheme": "Preto, Branco e Fúcsia"
+    },
+    {
+      "id": "convite-09",
+      "name": "Laurel Formatura Gala",
+      "category": "FORMATURA",
+      "badge": null,
+      "is_featured": false,
+      "price": "R$ 159,90",
+      "price_installments": "ou 3x de R$ 56,80",
+      "description": "Projetado para engenharia, arquitetura e cursos corporativos com ar de celebração memorável e mapas para recepção e colação.",
+      "features": ["Localização Dupla", "Galeria da Graduação", "Mensagem da Turma", "Confirmação"],
+      "variations": ["Edição Individual", "Edição Comissões"],
+      "demo_url": "https://example.com/demo/laurel-formatura",
+      "preview_image": "https://images.unsplash.com/photo-1502635385003-ee1e6a1a742d?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "color_scheme": "Preto Grafite e Rosa Metálico"
+    },
+    {
+      "id": "convite-10",
+      "name": "Nouveau Bebê & Maternidade",
+      "category": "CHÁ DE BEBÊ",
+      "badge": "MAIS VENDIDO",
+      "is_featured": false,
+      "price": "R$ 129,90",
+      "price_installments": "ou 2x de R$ 68,40",
+      "description": "Delicadeza sofisticada sem infantilismo caricato. Ideal para chá revelação, chá de fraldas ou apresentação do bebê.",
+      "features": ["Tamanho das Fraldas", "Lista de Presentes Online", "Votação Menino/Menina", "RSVP"],
+      "variations": ["Tema Balão & Nuvens", "Minimalista Monocromático"],
+      "demo_url": "https://example.com/demo/nouveau-bebe",
+      "preview_image": "https://images.unsplash.com/photo-1647470225458-fd0416ab182a?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "color_scheme": "Branco Puro, Rosa Pálido e Carvão"
+    },
+    {
+      "id": "convite-11",
+      "name": "Classic Editorial Minimalist",
+      "category": "CONVITES",
+      "badge": null,
+      "is_featured": false,
+      "price": "R$ 139,90",
+      "price_installments": "ou 2x de R$ 73,50",
+      "description": "Versatilidade e elegância para bodas, jantares comemorativos e aniversários adultos que exigem distinção visual.",
+      "features": ["Cardápio Digital", "Confirmação com Restrição Alimentar", "Mapa", "Fotos"],
+      "variations": ["Fundo Branco", "Fundo Obsidian"],
+      "demo_url": "https://example.com/demo/classic-editorial",
+      "preview_image": "https://images.unsplash.com/photo-1625046584009-a6a8370c55f2?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "color_scheme": "Branco e Preto com Acentos Rosa"
+    },
+    {
+      "id": "convite-12",
+      "name": "Starlight Aniversário VIP",
+      "category": "CONVITES",
+      "badge": null,
+      "is_featured": false,
+      "price": "R$ 149,90",
+      "price_installments": "ou 2x de R$ 78,90",
+      "description": "Ideal para festas de 30, 40, 50 anos ou celebrações intimistas no rooftop. Inclui contagem regressiva e confirmação em lote.",
+      "features": ["RSVP por Família", "Música Customizada", "Dress Code Visual", "QR Code no Convite"],
+      "variations": ["Glamour Dark", "Glamour Light"],
+      "demo_url": "https://example.com/demo/starlight-vip",
+      "preview_image": "https://images.pexels.com/photos/39903969/pexels-photo-39903969.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "color_scheme": "Preto Noite e Rosa Neon Suave"
+    },
+    {
+      "id": "convite-13",
+      "name": "Save The Date Cinematic Video",
+      "category": "EXTRAS",
+      "badge": "EXPERIÊNCIA PREMIUM",
+      "is_featured": false,
+      "price": "R$ 99,90",
+      "price_installments": "ou 2x de R$ 52,50",
+      "description": "Teaser interativo com vídeo vertical dos anfitriões, calendário para salvar direto no Google Agenda e aviso de antecedência.",
+      "features": ["Adicionar à Agenda (.ics/Google)", "Vídeo Embutido", "Compartilhamento WhatsApp", "Notificação"],
+      "variations": ["Vídeo Vertical", "Foto Motion"],
+      "demo_url": "https://example.com/demo/save-the-date-cinematic",
+      "preview_image": "https://images.unsplash.com/photo-1648656433394-6f488f55c561?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "color_scheme": "Preto, Branco e Rosa Champagne"
+    }
+  ],
+  "motion_language": {
+    "engine": "framer-motion",
+    "principles": {
+      "stagger_reveal": "Cards animate in with staggerChildren: 0.08, opacity 0 to 1, y from 24 to 0, ease: [0.22, 1, 0.36, 1]",
+      "filter_switch": "Layout layoutId transition for active category pill indicator and smooth AnimatePresence exit/enter for filtered grid items",
+      "mockup_hover": "Smooth scale from 1.0 to 1.03 with subtle elevation shadow increase and rose highlight reflection",
+      "modal_transition": "Backdrop fade-in (opacity 0 to 1), phone modal scale from 0.94 to 1.0 with spring tension 280 and damping 24"
+    }
+  },
+  "interactive_components": {
+    "filter_bar_component": "src/components/catalog/CategoryFilter.js",
+    "product_grid_component": "src/components/catalog/ProductGrid.js",
+    "product_card_component": "src/components/catalog/ProductCard.js",
+    "phone_mockup_component": "src/components/catalog/PhoneMockup.js",
+    "preview_modal_component": "src/components/catalog/PreviewModal.js",
+    "hero_section_component": "src/components/catalog/HeroSection.js",
+    "stats_section_component": "src/components/catalog/StatsSection.js",
+    "dark_features_component": "src/components/catalog/DarkFeatures.js",
+    "footer_component": "src/components/catalog/Footer.js"
+  },
+  "test_id_conventions": {
+    "catalog_container": "data-testid='catalog-root-container'",
+    "category_filter_button": "data-testid='category-filter-btn-{category_id}'",
+    "product_card": "data-testid='product-card-{product_id}'",
+    "btn_view_demo": "data-testid='btn-view-demo-{product_id}'",
+    "btn_order_product": "data-testid='btn-order-whatsapp-{product_id}'",
+    "preview_modal": "data-testid='preview-modal-dialog'",
+    "btn_close_modal": "data-testid='btn-close-preview-modal'",
+    "btn_open_external_full": "data-testid='btn-open-external-convite'",
+    "btn_footer_order": "data-testid='btn-footer-order-action'",
+    "btn_footer_contact": "data-testid='btn-footer-contact-action'",
+    "header_brand_logo": "data-testid='header-brand-logo'"
+  },
+  "instructions_to_main_agent": [
+    "1. Adicione a importação das fontes Google Playfair Display, Plus Jakarta Sans e Italiana no index.html ou no topo do index.css.",
+    "2. Utilize arquivos .js e .jsx (NÃO .tsx) conforme ambiente configurado.",
+    "3. Siga estritamente a paleta solicitada: Fundo branco ou muito claro (#FFFFFF / #FAFAFA), textos principais em preto (#0A0A0A) e destaques exclusivos em Rosa / Fúcsia sofisticado (#D81B60). Nunca use lilás, azul bebê ou creme desbotado.",
+    "4. Destaque 5 produtos com o selo e contorno suave rosé (Elysée, Aura Noir, Vanguard, Jardim de Provence, Luminary).",
+    "5. Na listagem de cards, monte o Mockup de Smartphone na proporção 9:16 com a imagem do convite em alta qualidade, detalhes do celular (borda arredondada premium, notch elegante e badge 'PRÉVIA INTERATIVA').",
+    "6. O Modal de Demonstração deve carregar um iframe interativo apenas quando o usuário clicar no botão 'VER DEMONSTRAÇÃO', fornecendo botão de fechar, botão de tela cheia em nova aba e fallback se o iframe demorar ou for restrito.",
+    "7. O botão 'QUERO ESTE CONVITE' deve direcionar diretamente para o WhatsApp do Studio Digital com mensagem pré-formatada contendo o nome e o código do produto.",
+    "8. Garanta responsividade cirúrgica: 1 card por linha no mobile com preview grande e botões touch-friendly, 2 no tablet e 3 no desktop sem esticar excessivamente os cards.",
+    "9. Use blocos escuros estratégicos na seção de recursos exclusivos e no rodapé institucional para gerar contraste de alta grife."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": {
+    "do_not_use_inter_for_headings": "Headings MUST be Playfair Display serif. Inter/Sans is strictly for body, small specs and prices.",
+    "no_full_screen_cheap_gradients": "Only delicate radial light blooms or solid dark contrast panels.",
+    "high_contrast_accessibility": "All text on white meets WCAG AA standards. Buttons have high contrast with white typography over #D81B60 or #0A0A0A.",
+    "smooth_transitions": "Explicit CSS/Tailwind transitions like transition-transform duration-300 ease-out, avoiding transition: all."
+  }
+}
